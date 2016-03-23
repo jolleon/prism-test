@@ -1,6 +1,7 @@
 import pytest
 from geopy.geocoders import GoogleV3
 from geopy.distance import vincenty
+import fileinput
 
 g = GoogleV3()
 
@@ -32,3 +33,11 @@ def test_distances():
 		assert e - margin < x < e + margin
 
 
+
+if __name__ == "__main__":
+	cities = [line[:-1] for line in fileinput.input()]
+	d = distances(cities)
+	print("Success! Your vacation itinerary is:\n")
+	for i in range(len(cities) - 1):
+		print("    {0} -> {1}: {2:.2f} miles".format(cities[i], cities[i+1], d[i]))
+	print("\nTotal distance covered in your trip: {0:.2f} miles".format(sum(d)))
