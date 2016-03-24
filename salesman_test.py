@@ -10,8 +10,7 @@ MILES = "miles"
 KM = "km"
 
 def distance(l1, l2):
-	d = vincenty((l1.latitude, l1.longitude), (l2.latitude, l2.longitude))
-	return d
+	return vincenty((l1.latitude, l1.longitude), (l2.latitude, l2.longitude))
 
 def distances(cities, unit=MILES):
 	positions = [g.geocode(c) for c in cities]
@@ -38,6 +37,7 @@ def test_distances():
 	margin = 10 # all geocoders are not equal
 	for e, x in zip(expected, d):
 		assert e - margin < x < e + margin
+
 
 
 def print_help():

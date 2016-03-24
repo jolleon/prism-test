@@ -18,6 +18,7 @@ def ksum_bruteforce(k, s, numbers):
 	raise ValueError("No solution")
 
 
+
 @pytest.mark.parametrize("k, s, numbers, expected", [
 	(3, 51, [7, 3, 6, 10, 43, 54, 2], (6, 43, 2)), # sample provided
 	(1, 5, [3, 4, 5, 6], (5,)), # using only 1 number
