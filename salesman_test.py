@@ -41,7 +41,7 @@ def test_distances():
 
 
 def print_help():
-	print("usage: {} -u <unit> [filename]".format(sys.argv[0]))
+	print("usage: python {} -u <unit> [filename]".format(sys.argv[0]))
 	print("    with unit = {} or {}".format(MILES, KM))
 
 
