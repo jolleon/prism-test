@@ -34,7 +34,7 @@ python salesman_test.py --unit km cities.txt
 python salesman_test.py -u km cities.txt 
 ```
 
-I used Google's geocoder api to get locations from addresses (it doens't seem to require a developer key right now).
+I used Google's geocoder api to get locations from addresses (it doens't seem to require a developer key right now). I didn't handle any error conditions (Google being down, API limit reached etc.) or edge cases related to the geocoder (wrong address etc.).
 
 I used [Geopy](https://github.com/geopy/geopy) to avoid having to write a client, but then realised that [geolocation-python](https://pypi.python.org/pypi/geolocation-python/0.2.0) may have been a better choice since it includes different modes of transportation which would have been handy for the bonus question.
 
