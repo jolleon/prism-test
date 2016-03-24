@@ -45,4 +45,12 @@ If I had more time I would switch client to support different transportation mod
 
 ## ksum
 
+```
+$ python ksum_test.py sample.txt 
+6
+43
+2
+
+```
+
 I only had time for the bruteforce solution - comlexity O(n ^ min(k, n-k)) (details in the solution file). Within the time I had I didn't find a solution with significantly better big-O complexity, although a number of heuristics can be used to reduce the average time.
