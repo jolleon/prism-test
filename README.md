@@ -1,5 +1,8 @@
 # prism-test
 
+- Code + test for ksum is in `ksum_test.py`.
+- Code + test for salesman is in `salesman_test.py`.
+
 Both files include tests, that can be run with py.test:
 ```
 $ py.test
