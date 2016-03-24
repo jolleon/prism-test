@@ -17,6 +17,8 @@ salesman_test.py .
 ======================================================================= 11 passed in 1.68 seconds ========================================================================
 ```
 
+(I would obviously not mix test and production code IRL but this was an easier setup for this exercise)
+
 ## salesman
 
 ```
